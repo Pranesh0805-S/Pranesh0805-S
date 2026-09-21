@@ -91,3 +91,12 @@ Backend Development      █████████████████░�
 Database Development     ████████████████░░░░░  75%
 Flutter Development      ████████████░░░░░░░░░  60%
 Problem Solving          ███████████████░░░░░░  70%
+```
+
+---
+
+## 🤝 Connect With Me
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/pranesh0805/)
+- 🐙 [GitHub](https://github.com/Pranesh0805-S)
+- 📧 [Email](mailto:pranesh8506s@gmail.com)
