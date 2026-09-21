@@ -17,7 +17,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           user: Pranesh0805-S
-          token: NOT_NEEDED
+          token: ${{ secrets.METRICS_TOKEN }}
 
           filename: metrics.svg
 
