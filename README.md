@@ -1,8 +1,8 @@
 # Hi there 👋
 
-I'm Pranesh — a Computer Applications student and developer who enjoys building practical projects and learning new technologies.
+I'm Pranesh — a BCA student and full-stack developer focused on building AI-integrated web applications.
 
-I’m currently focused on improving my skills in **full-stack development, software engineering, databases, and problem solving**.
+I work primarily with **Node.js, React, JavaScript, Python, databases, and LLM APIs**, with a focus on building and shipping practical software products.
 
 ---
 
@@ -21,43 +21,48 @@ I’m currently focused on improving my skills in **full-stack development, soft
 ## 🛠️ Tech Stack
 
 ### Languages
-`C` `C++` `Java` `Python` `JavaScript` `SQL` `Go`
+`Python` `JavaScript` `Java` `C` `C++` `SQL`
 
 ### Frontend
-`HTML` `CSS` `JavaScript` `React` `Tailwind CSS` `Bootstrap`
+`React` `HTML5` `CSS3` `Vite`
 
-### Backend
-`Node.js` `Express.js` `MongoDB` `Oracle` `MySQL`
+### Backend & APIs
+`Node.js` `Express.js` `REST APIs` `JWT` `bcrypt`
 
-### Mobile Development
-`Flutter` `Dart`
+### Databases
+`MySQL` `MongoDB` `PostgreSQL` `Supabase` `pgvector`
 
-### Tools & Platforms
-`Git` `GitHub` `VS Code` `Android Studio` `Figma` `Canva`
+### AI / LLM
+`Anthropic API` `LLM Application Development`
+
+### Cloud & Tools
+`Vercel` `Render` `Git` `GitHub` `Figma` `Canva`
 
 ---
 
 ## 📌 Featured Projects
 
-### 🎓 Student Portal
-A full-stack student management portal with features such as:
+### ✉️ Envoy Mail
 
-- Student & staff authentication
-- Attendance tracking
-- Assignments
-- Notices
-- Marksheet
-- Internal marks
-- Profile management
+A full-stack AI Gmail agent built with Claude Haiku for inbox categorization, featuring an approval queue for safely gating destructive actions and Google Calendar synchronization for context-aware scheduling.
 
-**Tech:** HTML • CSS • JavaScript • Node.js • Oracle
+**Tech:** Node.js • React • Anthropic API • Google APIs
 
 ---
 
-### 🎮 Rift Runner V2
-A Python-based platformer game developed using Pygame.
+### 🤖 JobAlert-Bot
 
-**Tech:** Python • Pygame
+A WhatsApp job-alert bot using the WhatsApp Business Cloud API with an NLP microservice for semantic job matching.
+
+**Tech:** Python • FastAPI • spaCy • pgvector • WhatsApp Business Cloud API
+
+---
+
+### 📝 MarkDrop
+
+A document-to-Markdown converter with secure OTP and OAuth authentication, built with a React/Vite frontend and Node/Express backend.
+
+**Tech:** React • Vite • Node.js • Express.js • OAuth • OTP
 
 ---
 
@@ -68,6 +73,35 @@ A project focused on exploring agent-related security and development concepts.
 
 ---
 
+## 🧪 Other Projects
+
+### 🎮 Rift Runner V2
+A Python-based platformer game developed using Pygame.
+
+**Tech:** Python • Pygame
+
+---
+
+## 🎓 Education
+
+**Bachelor of Computer Application (BCA)**  
+Bishop Appasamy College of Arts and Science, Coimbatore  
+**2023 – 2026 | CGPA: 7.3/10**
+
+---
+
+## 🏆 Certifications
+
+- **Introduction to MongoDB for Students** — MongoDB
+
+---
+
+## 🏅 Achievements & Workshops
+
+- Organized **Debugging Competition – Bliss 2025**
+- Attended **Google Cloud Community Day – 2025**
+
+---
 ## 📊 GitHub Metrics
 
 ![GitHub Metrics](./metrics.svg)
@@ -82,15 +116,16 @@ I'm consistently working on projects, experimenting with new technologies, and i
 
 ---
 
-## 🎯 Current Focus
+## 📚 Currently Learning
 
 ```text
-Full-Stack Development   ███████████████████░░  90%
-Data Structures & Algo   ████████████████░░░░░  75%
-Backend Development      █████████████████░░░░  80%
-Database Development     ████████████████░░░░░  75%
-Flutter Development      ████████████░░░░░░░░░  60%
-Problem Solving          ███████████████░░░░░░  70%
+- Advanced Full-Stack Development
+- AI/LLM Application Development
+- Data Structures & Algorithms
+- Backend Architecture
+- REST API Design
+- Database Design
+- Software Engineering Practices
 ```
 
 ---
@@ -100,3 +135,5 @@ Problem Solving          ███████████████░░░�
 - 💼 [LinkedIn](https://www.linkedin.com/in/pranesh0805/)
 - 🐙 [GitHub](https://github.com/Pranesh0805-S)
 - 📧 [Email](mailto:pranesh8506s@gmail.com)
+
+---
