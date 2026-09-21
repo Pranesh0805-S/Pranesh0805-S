@@ -42,7 +42,7 @@ I work primarily with **Node.js, React, JavaScript, Python, databases, and LLM A
 
 ## 📌 Featured Projects
 
-### ✉️ Envoy Mail
+### ✉️ [Envoy Mail](https://github.com/Pranesh0805-S/Envoy)
 
 A full-stack AI Gmail agent built with Claude Haiku for inbox categorization, featuring an approval queue for safely gating destructive actions and Google Calendar synchronization for context-aware scheduling.
 
@@ -50,7 +50,7 @@ A full-stack AI Gmail agent built with Claude Haiku for inbox categorization, fe
 
 ---
 
-### 🤖 JobAlert-Bot
+### 🤖 [JobAlert-Bot](https://jobalert-bot.vercel.app/)
 
 A WhatsApp job-alert bot using the WhatsApp Business Cloud API with an NLP microservice for semantic job matching.
 
@@ -58,7 +58,7 @@ A WhatsApp job-alert bot using the WhatsApp Business Cloud API with an NLP micro
 
 ---
 
-### 📝 MarkDrop
+### 📝 [MarkDrop](https://mark-drop.vercel.app/)
 
 A document-to-Markdown converter with secure OTP and OAuth authentication, built with a React/Vite frontend and Node/Express backend.
 
@@ -66,7 +66,7 @@ A document-to-Markdown converter with secure OTP and OAuth authentication, built
 
 ---
 
-### 🛡️ Agent-Guard
+### 🛡️ [Agent-Guard](https://github.com/Pranesh0805-S/Agent-Guard)
 A project focused on exploring agent-related security and development concepts.
 
 **Tech:** Python • AI/LLM concepts • GitHub
@@ -75,7 +75,7 @@ A project focused on exploring agent-related security and development concepts.
 
 ## 🧪 Other Projects
 
-### 🎮 Rift Runner V2
+### 🎮 [Rift Runner V2](https://github.com/Pranesh0805-S/Game-Development/tree/main/RiftRunnerV2)
 A Python-based platformer game developed using Pygame.
 
 **Tech:** Python • Pygame
