@@ -105,9 +105,13 @@ Bishop Appasamy College of Arts and Science, Coimbatore
 
 ## 📊 GitHub Metrics
 
-<p align="center">
-  <img src="./metrics.svg" alt="GitHub Isometric Contribution Calendar" width="900">
-</p>
+### 📅 Contributions Calendar
+
+<img
+  src="./metrics.svg"
+  alt="GitHub Isometric Contribution Calendar"
+  width="100%"
+/>
 
 ---
 
