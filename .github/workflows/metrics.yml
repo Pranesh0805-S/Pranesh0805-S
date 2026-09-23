@@ -2,57 +2,41 @@ name: GitHub Profile Metrics
 
 on:
   schedule:
-    - cron: "17 0 * * *" # Every day at 5:47 AM IST
-  workflow_dispatch: # Allows manual execution
+    - cron: "17 0 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  metrics:
     runs-on: ubuntu-latest
-    name: Generate GitHub Contribution Visualizations
 
     steps:
-      # Checkout repository
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      # Generate Isometric Contribution Calendar
-      - name: Generate Isometric Commit Calendar
+      - name: Generate GitHub Metrics
         uses: lowlighter/metrics@latest
         with:
           user: Pranesh0805-S
           token: ${{ secrets.METRICS_TOKEN }}
 
+          # Output
           filename: metrics.svg
+
+          # Keep only the isometric calendar
           base: ""
 
+          # India timezone
+          config_timezone: Asia/Kolkata
+
+          # Better display size
+          config_display: large
+
+          # Isometric contribution calendar
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-          # Do not let this action create its own commit.
-          # We commit both generated outputs together below.
-          output_action: none
+          # Automatically commit the generated SVG
+          output_action: commit
 
-      # Generate 3D Contribution Calendar
-      - name: Generate 3D Contribution Calendar
-        uses: yoshi389111/github-profile-3d-contrib@0.7.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-
-      # Commit both generated calendars
-      - name: Commit & Push Changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          git add -A .
-
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "chore: update GitHub contribution metrics [Skip GitHub Action]"
-            git push
-          fi
+          # Clear commit message
+          committer_message: "chore: update GitHub contribution metrics [Skip GitHub Action]"
