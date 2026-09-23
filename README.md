@@ -102,15 +102,19 @@ Bishop Appasamy College of Arts and Science, Coimbatore
 - Attended **Google Cloud Community Day – 2025**
 
 ---
+
 ## 📊 GitHub Metrics
 
-![GitHub Metrics](./metrics.svg)
+<p align="center">
+  <img src="./metrics.svg" alt="GitHub Isometric Contribution Calendar" width="900">
+</p>
 
 ---
 
 ## 📈 GitHub Activity
 
-I'm consistently working on projects, experimenting with new technologies, and improving my development skills.
+I'm consistently working on projects, experimenting with new technologies,
+and improving my development skills.
 
 > Building projects. Learning every day. Improving one commit at a time. 🚀
 
