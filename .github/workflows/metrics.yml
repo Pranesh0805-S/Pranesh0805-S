@@ -13,30 +13,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Generate GitHub Metrics
+      - name: Generate Isometric Commit Calendar
         uses: lowlighter/metrics@latest
         with:
           user: Pranesh0805-S
           token: ${{ secrets.METRICS_TOKEN }}
 
-          # Output
           filename: metrics.svg
 
-          # Keep only the isometric calendar
           base: ""
 
-          # India timezone
-          config_timezone: Asia/Kolkata
-
-          # Better display size
-          config_display: large
-
-          # Isometric contribution calendar
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-
-          # Automatically commit the generated SVG
-          output_action: commit
-
-          # Clear commit message
-          committer_message: "chore: update GitHub contribution metrics [Skip GitHub Action]"
