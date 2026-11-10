@@ -1,0 +1,82 @@
+name: Refresh profile cards
+
+on:
+  schedule:
+    - cron: "17 18 * * *"        # daily, 23:47 IST
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/build_cards.py
+      - assets/**
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cards
+  cancel-in-progress: true
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    env:
+      LOGIN: Pranesh0805-S
+      # Featured repos whose stars/language appear on the project cards (must match REPOS in build_cards.py)
+      REPOS: Envoy JobAlert-Bot Markdrop Agent-Guard
+      # Optional: a classic PAT with read:user adds private-repo contributions. Falls back to the built-in token.
+      GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install build tools
+        run: pip install fonttools brotli pillow
+
+      - name: Refresh data/contributions.json
+        run: |
+          set -euo pipefail
+          gh api graphql -f login="$LOGIN" -f query='
+            query($login: String!) {
+              user(login: $login) {
+                contributionsCollection {
+                  contributionCalendar {
+                    totalContributions
+                    weeks { contributionDays { date contributionCount } }
+                  }
+                }
+              }
+            }' > /tmp/calendar.json
+
+          jq '.data.user.contributionsCollection.contributionCalendar as $c | {
+                login: env.LOGIN,
+                generated: (now | todate),
+                total: $c.totalContributions,
+                days: [$c.weeks[].contributionDays[] | {date, count: .contributionCount}]
+              }' /tmp/calendar.json > /tmp/data.json
+
+          repos='{}'
+          for r in $REPOS; do
+            info=$(gh api "repos/$LOGIN/$r" --jq '{stars: .stargazers_count, language: .language}' 2>/dev/null || echo null)
+            repos=$(jq -c --arg r "$r" --argjson i "$info" '. + {($r): $i}' <<<"$repos")
+          done
+
+          mkdir -p data
+          jq --argjson repos "$repos" '. + {repos: $repos}' /tmp/data.json > data/contributions.json
+
+      - name: Build cards
+        run: python scripts/build_cards.py
+
+      - name: Commit changes
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/contributions.json cards
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "chore: refresh profile cards"
+            git push
+          fi
