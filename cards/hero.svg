@@ -15,7 +15,7 @@
 </style>
 <rect width="1200" height="360" rx="24" fill="url(#bg)"/><rect width="1200" height="360" rx="24" fill="url(#grid)"/>
 <circle cx="1000" cy="40" r="190" fill="url(#glow)" filter="url(#blur)"/>
-<circle cx="1050" cy="285" r="105" fill="#0ea5e9" opacity=".09" class="pulse"/></circle>
+<circle cx="1050" cy="285" r="105" fill="#0ea5e9" opacity=".09" class="pulse"></circle>
 <g fill="none" stroke="url(#accent)" stroke-width="1.2" opacity=".5"><path d="M820 0V360M880 0V360M940 0V360M1000 0V360M1060 0V360M1120 0V360"/><path d="M780 60H1200M780 120H1200M780 180H1200M780 240H1200M780 300H1200"/></g>
 <g transform="translate(78 75)">
  <rect x="0" y="0" width="8" height="8" rx="2" fill="#38bdf8"/><text x="22" y="9" fill="#93c5fd" font-family="monospace" font-size="14" letter-spacing="3">DEVELOPER PROFILE / 2026</text>
