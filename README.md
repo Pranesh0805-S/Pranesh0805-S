@@ -56,7 +56,7 @@ I’m especially interested in the engineering behind a product: clear interface
 ## GitHub activity
 
 <div align="center">
-  <img src="./cards/activity.svg" width="100%" alt="Animated engineering loop: build, test, learn, repeat"/>
+  <img src="./cards/activity.svg" width="100%" alt="Year-to-date GitHub contributions, active days, best day, and monthly contribution totals"/>
   <br/>
   <img src="./metrics.svg" width="100%" alt="GitHub isometric contribution calendar"/>
 </div>
