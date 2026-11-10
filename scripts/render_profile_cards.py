@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Render a self-contained GitHub contribution summary SVG for the profile README.
 
-Reads contribution data from GitHub's GraphQL API and writes cards/contributions.svg.
+Reads contribution data from GitHub's GraphQL API and writes cards/activity.svg.
 No third-party Python dependencies are required.
 """
 from __future__ import annotations
