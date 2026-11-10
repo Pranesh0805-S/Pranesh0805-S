@@ -1,147 +1,80 @@
-# Hi there 👋
+<!--
+  Pranesh S | Animated developer profile
+  Assets are self-hosted SVGs in ./cards. No external stats widgets required.
+-->
 
-I'm Pranesh — a BCA student and full-stack developer focused on building AI-integrated web applications.
+<div align="center">
+  <img src="./cards/hero.svg" width="100%" alt="Pranesh S — Full-stack developer and AI builder" />
+  <br/>
+  <a href="https://github.com/Pranesh0805-S"><img src="https://img.shields.io/badge/GitHub-Pranesh0805--S-161b22?style=flat-square&logo=github" alt="GitHub"/></a>
+  <a href="https://www.linkedin.com/in/pranesh0805/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn"/></a>
+  <a href="mailto:pranesh8506s@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20hello-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
+</div>
 
-I work primarily with **Node.js, React, JavaScript, Python, databases, and LLM APIs**, with a focus on building and shipping practical software products.
+## The short version
 
----
+I’m **Pranesh**, a BCA graduate and developer who enjoys turning practical ideas into working software. I build across full-stack web development, AI-assisted tools, backend systems, and developer utilities.
 
-## 🚀 About Me
+I’m especially interested in the engineering behind a product: clear interfaces, reliable APIs, thoughtful data models, and tools that solve real problems.
 
-- 🎓 Computer Applications student
-- 💻 Interested in Full-Stack Development
-- 🧠 Currently strengthening my Data Structures & Algorithms skills
-- 🌐 Building web applications and developer tools
-- 📱 Exploring application development with Flutter
-- 🛠️ Enjoy turning ideas into real working projects
-- 📚 Always learning and experimenting with new technologies
+## Three sides of my work
 
----
+<div align="center">
+  <a href="https://github.com/Pranesh0805-S?tab=repositories"><img src="./cards/build.svg" width="32%" alt="Build — products and full-stack projects"/></a>
+  <a href="https://github.com/Pranesh0805-S/Agent-Guard"><img src="./cards/systems.svg" width="32%" alt="Systems — backend and AI engineering"/></a>
+  <a href="https://github.com/Pranesh0805-S/LeetCode-Problems"><img src="./cards/learn.svg" width="32%" alt="Learn — algorithms and continuous learning"/></a>
+</div>
 
-## 🛠️ Tech Stack
+## Selected work
 
-### Languages
-`Python` `JavaScript` `Java` `C` `C++` `SQL`
+<div align="center">
+  <a href="https://github.com/Pranesh0805-S/Envoy"><img src="./cards/project-envoy.svg" width="49%" alt="Envoy Mail project card"/></a>
+  <a href="https://jobalert-bot.vercel.app/"><img src="./cards/project-jobalert.svg" width="49%" alt="JobAlert Bot project card"/></a>
+  <a href="https://mark-drop.vercel.app/"><img src="./cards/project-markdrop.svg" width="49%" alt="MarkDrop project card"/></a>
+  <a href="https://github.com/Pranesh0805-S/Agent-Guard"><img src="./cards/project-agentguard.svg" width="49%" alt="Agent Guard project card"/></a>
+</div>
 
-### Frontend
-`React` `HTML5` `CSS3` `Vite`
+<details>
+  <summary><strong>More projects</strong></summary>
 
-### Backend & APIs
-`Node.js` `Express.js` `REST APIs` `JWT` `bcrypt`
+  - **[Rift Runner V2](https://github.com/Pranesh0805-S/Game-Development/tree/main/RiftRunnerV2)** — a Python platformer built with Pygame.
+  - **[docrot](https://github.com/Pranesh0805-S/docrot)** — an npm package that checks code examples in package documentation against the package's actual exports.
+  - **[DevMate V3](https://huggingface.co/Pranesh0805-S/DevMate-V3)** — a coding assistant fine-tuned from Qwen3-0.6B with LoRA and evaluated across programming topics.
+</details>
 
-### Databases
-`MySQL` `MongoDB` `PostgreSQL` `Supabase` `pgvector`
+## Tools I work with
 
-### AI / LLM
-`Anthropic API` `LLM Application Development`
+| Area | Technologies |
+|---|---|
+| Languages | Python, JavaScript, Java, C, C++, SQL |
+| Frontend | React, HTML, CSS, Vite |
+| Backend | Node.js, Express, FastAPI, REST APIs |
+| Data | MySQL, MongoDB, PostgreSQL, Supabase, pgvector |
+| AI engineering | LLM APIs, prompt integration, LoRA fine-tuning |
+| Tools & platforms | Git, GitHub, Vercel, Render, Figma |
 
-### Cloud & Tools
-`Vercel` `Render` `Git` `GitHub` `Figma` `Canva`
+## GitHub activity
 
----
+<div align="center">
+  <img src="./cards/activity.svg" width="100%" alt="Year-to-date GitHub contributions, active days, best day, and monthly contribution totals"/>
+  <br/>
+  <img src="./metrics.svg" width="100%" alt="GitHub isometric contribution calendar"/>
+</div>
 
-## 📌 Featured Projects
+## A little more
 
-### ✉️ [Envoy Mail](https://github.com/Pranesh0805-S/Envoy)
+- 🎓 **BCA** — Bishop Appasamy College of Arts and Science, Coimbatore (2023–2026)
+- 🧩 Practising data structures and algorithms alongside product development.
+- 🛠️ Interested in AI-enabled applications, developer experience, and backend architecture.
+- 🤝 Organized a debugging competition at **Bliss 2025** and attended **Google Cloud Community Day 2025**.
+- 📚 MongoDB — Introduction to MongoDB for Students.
 
-A full-stack AI Gmail agent built with Claude Haiku for inbox categorization, featuring an approval queue for safely gating destructive actions and Google Calendar synchronization for context-aware scheduling.
+## Find me
 
-**Tech:** Node.js • React • Anthropic API • Google APIs
-
----
-
-### 🤖 [JobAlert-Bot](https://jobalert-bot.vercel.app/)
-
-A WhatsApp job-alert bot using the WhatsApp Business Cloud API with an NLP microservice for semantic job matching.
-
-**Tech:** Python • FastAPI • spaCy • pgvector • WhatsApp Business Cloud API
-
----
-
-### 📝 [MarkDrop](https://mark-drop.vercel.app/)
-
-A document-to-Markdown converter with secure OTP and OAuth authentication, built with a React/Vite frontend and Node/Express backend.
-
-**Tech:** React • Vite • Node.js • Express.js • OAuth • OTP
-
----
-
-### 🛡️ [Agent-Guard](https://github.com/Pranesh0805-S/Agent-Guard)
-A project focused on exploring agent-related security and development concepts.
-
-**Tech:** Python • AI/LLM concepts • GitHub
-
----
-
-## 🧪 Other Projects
-
-### 🎮 [Rift Runner V2](https://github.com/Pranesh0805-S/Game-Development/tree/main/RiftRunnerV2)
-A Python-based platformer game developed using Pygame.
-
-**Tech:** Python • Pygame
-
----
-
-## 🎓 Education
-
-**Bachelor of Computer Application (BCA)**  
-Bishop Appasamy College of Arts and Science, Coimbatore  
-**2023 – 2026 | CGPA: 7.3/10**
-
----
-
-## 🏆 Certifications
-
-- **Introduction to MongoDB for Students** — MongoDB
-
----
-
-## 🏅 Achievements & Workshops
-
-- Organized **Debugging Competition – Bliss 2025**
-- Attended **Google Cloud Community Day – 2025**
-
----
-
-## 📊 GitHub Metrics
-
-### 📅 Contributions Calendar
-
-<img
-  src="./metrics.svg"
-  alt="GitHub Isometric Contribution Calendar"
-  width="100%"
-/>
-
----
-
-## 📈 GitHub Activity
-
-I'm consistently working on projects, experimenting with new technologies,
-and improving my development skills.
-
-> Building projects. Learning every day. Improving one commit at a time. 🚀
-
----
-
-## 📚 Currently Learning
-
-```text
-- Advanced Full-Stack Development
-- AI/LLM Application Development
-- Data Structures & Algorithms
-- Backend Architecture
-- REST API Design
-- Database Design
-- Software Engineering Practices
-```
-
----
-
-## 🤝 Connect With Me
-
-- 💼 [LinkedIn](https://www.linkedin.com/in/pranesh0805/)
-- 🐙 [GitHub](https://github.com/Pranesh0805-S)
-- 📧 [Email](mailto:pranesh8506s@gmail.com)
-
----
+<div align="center">
+  <a href="https://github.com/Pranesh0805-S">GitHub</a> ·
+  <a href="https://www.linkedin.com/in/pranesh0805/">LinkedIn</a> ·
+  <a href="mailto:pranesh8506s@gmail.com">Email</a>
+  <br/><br/>
+  <sub>Build with intent. Learn in public. Improve every release.</sub>
+</div>
