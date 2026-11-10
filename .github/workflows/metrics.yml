@@ -25,3 +25,8 @@ jobs:
 
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+
+      - name: Render animated contribution summary
+        env:
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: python scripts/render_profile_cards.py
