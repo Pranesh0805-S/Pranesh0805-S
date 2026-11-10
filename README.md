@@ -38,7 +38,7 @@ I’m especially interested in the engineering behind a product: clear interface
   <summary><strong>More projects</strong></summary>
 
   - **[Rift Runner V2](https://github.com/Pranesh0805-S/Game-Development/tree/main/RiftRunnerV2)** — a Python platformer built with Pygame.
-  - **[docrot](https://github.com/Pranesh0805-S/docrot)** — a document-oriented developer utility published as an npm package.
+  - **[docrot](https://github.com/Pranesh0805-S/docrot)** — an npm package that checks code examples in package documentation against the package's actual exports.
   - **[DevMate V3](https://huggingface.co/Pranesh0805-S/DevMate-V3)** — a coding assistant fine-tuned from Qwen3-0.6B with LoRA and evaluated across programming topics.
 </details>
 
