@@ -97,10 +97,10 @@ def render_svg(collection: dict, year: int, generated_at: datetime) -> str:
     max_bar = max(peak_month, 1)
 
     left = 50
-    baseline = 202
+    baseline = 220
     bar_width = 48
     gap = 38
-    chart_height = 104
+    chart_height = 84
     month_names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
                    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
