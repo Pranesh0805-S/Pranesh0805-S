@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">Pranesh S — Developer and AI builder</title><desc id="desc">A dark, animated banner introducing Pranesh and his interests in full-stack engineering and AI products.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080d19"/><stop offset=".55" stop-color="#101b31"/><stop offset="1" stop-color="#172554"/></linearGradient>
+ <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#38bdf8"/><stop offset=".52" stop-color="#818cf8"/><stop offset="1" stop-color="#c084fc"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#6366f1" stop-opacity=".4"/><stop offset="1" stop-color="#6366f1" stop-opacity="0"/></radialGradient>
+ <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#94a3b8" stroke-opacity=".09"/></pattern>
+ <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+<rect width="1200" height="360" rx="24" fill="url(#bg)"/><rect width="1200" height="360" rx="24" fill="url(#grid)"/>
+<circle cx="1000" cy="40" r="190" fill="url(#glow)" filter="url(#blur)"/>
+<circle cx="1050" cy="285" r="105" fill="#0ea5e9" opacity=".09"><animate attributeName="r" values="95;125;95" dur="8s" repeatCount="indefinite"/></circle>
+<g fill="none" stroke="url(#accent)" stroke-width="1.2" opacity=".5"><path d="M820 0V360M880 0V360M940 0V360M1000 0V360M1060 0V360M1120 0V360"/><path d="M780 60H1200M780 120H1200M780 180H1200M780 240H1200M780 300H1200"/></g>
+<g transform="translate(78 75)">
+ <rect x="0" y="0" width="8" height="8" rx="2" fill="#38bdf8"/><text x="22" y="9" fill="#93c5fd" font-family="monospace" font-size="14" letter-spacing="3">DEVELOPER PROFILE / 2026</text>
+ <text x="0" y="104" fill="#f8fafc" font-family="Arial,Helvetica,sans-serif" font-size="66" font-weight="700" letter-spacing="-2">Hey, I'm Pranesh.</text>
+ <rect x="0" y="128" width="355" height="3" rx="2" fill="url(#accent)"/>
+ <text x="0" y="171" fill="#cbd5e1" font-family="Arial,Helvetica,sans-serif" font-size="23">Full-stack developer <tspan fill="#64748b">·</tspan> AI builder <tspan fill="#64748b">·</tspan> Product-minded engineer</text>
+ <text x="0" y="214" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="16">Turning ideas into useful software, one thoughtful iteration at a time.</text>
+</g>
+<g transform="translate(825 78)">
+ <rect width="292" height="204" rx="18" fill="#0b1222" fill-opacity=".82" stroke="#334155"/>
+ <circle cx="24" cy="24" r="5" fill="#38bdf8"/><circle cx="43" cy="24" r="5" fill="#818cf8"/><circle cx="62" cy="24" r="5" fill="#c084fc"/>
+ <text x="24" y="65" fill="#64748b" font-family="monospace" font-size="12">pranesh.ts</text>
+ <text x="24" y="101" fill="#c4b5fd" font-family="monospace" font-size="15">const</text><text x="78" y="101" fill="#e2e8f0" font-family="monospace" font-size="15">focus = [</text>
+ <text x="42" y="129" fill="#7dd3fc" font-family="monospace" font-size="14">"engineering",</text>
+ <text x="42" y="154" fill="#7dd3fc" font-family="monospace" font-size="14">"AI applications",</text>
+ <text x="42" y="179" fill="#7dd3fc" font-family="monospace" font-size="14">"developer tools"</text>
+ <text x="24" y="198" fill="#e2e8f0" font-family="monospace" font-size="14">];</text>
+</g>
+<path d="M78 322H1120" stroke="#64748b" stroke-opacity=".3"/><circle cx="78" cy="322" r="3" fill="#38bdf8"/>
+<text x="95" y="327" fill="#64748b" font-family="monospace" font-size="11" letter-spacing="2">BUILD / SHIP / LEARN</text>
+</svg>
