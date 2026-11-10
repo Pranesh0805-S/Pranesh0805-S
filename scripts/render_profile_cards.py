@@ -16,7 +16,7 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 
 USERNAME = "Pranesh0805-S"
-OUTPUT = Path("cards/contributions.svg")
+OUTPUT = Path("cards/activity.svg")
 API_URL = "https://api.github.com/graphql"
 
 QUERY = """
@@ -81,15 +81,18 @@ def render_svg(collection: dict, year: int, generated_at: datetime) -> str:
         for week in collection["contributionCalendar"]["weeks"]
         for day in week["contributionDays"]
     ]
+    current_year_days = [
+        item for item in days
+        if datetime.strptime(item["date"], "%Y-%m-%d").year == year
+    ]
     monthly = [0] * 12
-    for item in days:
+    for item in current_year_days:
         date = datetime.strptime(item["date"], "%Y-%m-%d")
-        if date.year == year:
-            monthly[date.month - 1] += int(item["contributionCount"])
+        monthly[date.month - 1] += int(item["contributionCount"])
 
     total = int(collection.get("totalContributions", 0))
-    active_days = sum(1 for item in days if int(item["contributionCount"]) > 0)
-    peak_day = max((int(item["contributionCount"]) for item in days), default=0)
+    active_days = sum(1 for item in current_year_days if int(item["contributionCount"]) > 0)
+    peak_day = max((int(item["contributionCount"]) for item in current_year_days), default=0)
     peak_month = max(monthly, default=0)
     max_bar = max(peak_month, 1)
 
