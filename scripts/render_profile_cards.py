@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Render a self-contained GitHub contribution summary SVG for the profile README.
 
-Reads contribution data from GitHub's GraphQL API and writes cards/activity.svg.
+Reads contribution data from GitHub's GraphQL API and writes cards/metrics-summary.svg
+(override with the CARD_OUTPUT environment variable). It deliberately does NOT write
+cards/activity.svg, which belongs to scripts/build_cards.py.
 No third-party Python dependencies are required.
 """
 from __future__ import annotations
@@ -16,15 +18,15 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 
 USERNAME = "Pranesh0805-S"
-OUTPUT = Path("cards/activity.svg")
+OUTPUT = Path(os.environ.get("CARD_OUTPUT", "cards/metrics-summary.svg"))
 API_URL = "https://api.github.com/graphql"
 
 QUERY = """
 query($login: String!, $from: DateTime!, $to: DateTime!) {
   user(login: $login) {
     contributionsCollection(from: $from, to: $to) {
-      totalContributions
       contributionCalendar {
+        totalContributions
         weeks {
           contributionDays {
             date
@@ -90,7 +92,7 @@ def render_svg(collection: dict, year: int, generated_at: datetime) -> str:
         date = datetime.strptime(item["date"], "%Y-%m-%d")
         monthly[date.month - 1] += int(item["contributionCount"])
 
-    total = int(collection.get("totalContributions", 0))
+    total = int(collection["contributionCalendar"]["totalContributions"])
     active_days = sum(1 for item in current_year_days if int(item["contributionCount"]) > 0)
     peak_day = max((int(item["contributionCount"]) for item in current_year_days), default=0)
     peak_month = max(monthly, default=0)
